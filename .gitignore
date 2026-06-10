@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Generated PDFs (uncomment to keep PDFs out of git)
+# *.pdf
+# !archive/**/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python virtualenvs (in case contributors add tooling)
+.venv/
+__pycache__/
+
+# Logs
+*.log
+npm-debug.log*

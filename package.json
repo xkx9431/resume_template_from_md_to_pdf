@@ -1,0 +1,14 @@
+{
+  "name": "resume-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Markdown -> A4 PDF resume template",
+  "scripts": {
+    "export:en": "npx --yes md-to-pdf resumes/resume.en.md --stylesheet styles/print.css --page-media-type print",
+    "export:cn": "npx --yes md-to-pdf resumes/resume.cn.md --stylesheet styles/print.css --page-media-type print"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  },
+  "license": "MIT"
+}

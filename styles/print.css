@@ -1,0 +1,126 @@
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  font-size: 10pt;
+  line-height: 1.34;
+  color: #222;
+  position: relative;
+}
+
+strong,
+b {
+  font-weight: 700 !important;
+}
+
+.resume-avatar {
+  display: block;
+  width: 108px;
+  height: auto;
+  margin: 0;
+}
+
+/* Fallback layout for the default template where the avatar sits right after h1 */
+h1:first-of-type {
+  margin-right: 124px;
+  min-height: 108px;
+}
+
+h1:first-of-type + .resume-avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.resume-header {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0.1em 0 0.2em;
+}
+
+.resume-header-main,
+.resume-header-photo {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.resume-header-main {
+  width: calc(100% - 124px);
+  padding-right: 14px;
+}
+
+.resume-header-main p {
+  margin: 0.2em 0;
+}
+
+.resume-title {
+  margin-top: 0 !important;
+}
+
+.resume-header-photo {
+  width: 124px;
+  text-align: right;
+}
+
+h1,
+h2,
+h3 {
+  page-break-after: avoid;
+  break-after: avoid-page;
+  margin-top: 0.62em;
+  margin-bottom: 0.22em;
+}
+
+p,
+li,
+blockquote {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+}
+
+p {
+  margin: 0.16em 0;
+}
+
+ul,
+ol {
+  margin: 0.18em 0 0.28em;
+  padding-left: 1.2em;
+}
+
+li {
+  margin: 0.05em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr,
+img,
+pre,
+code {
+  page-break-inside: avoid;
+  break-inside: avoid-page;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #d9d9d9;
+  margin: 0.5em 0;
+}
