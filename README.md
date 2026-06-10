@@ -56,6 +56,8 @@ Use `-CssFile` to pass a custom stylesheet:
 ./scripts/export-md-pdf.ps1 -MdFile "resumes/resume.en.md" -CssFile "styles/print.css"
 ```
 
+![sample output](assets/pics/image.png)
+
 ---
 
 ## Repository layout
